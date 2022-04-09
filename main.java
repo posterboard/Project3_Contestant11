@@ -34,6 +34,9 @@ class Main {
   static JLabel orchestraQuantityLbl;
   static JLabel mezzazineQuantityLbl;
   static JLabel balconyQuantityLbl;
+  static JLabel checkoutOrchPriceLbl;
+  static JLabel checkoutMezzPriceLbl;
+  static JLabel checkoutBalcPriceLbl;
   private static JPasswordField passwordInput;
   
   public static void main(String[] args) {
@@ -275,7 +278,7 @@ class Main {
 	  gbc_mezzazineQuantityLbl.gridy = 2;
 	  center.add(mezzazineQuantityLbl, gbc_mezzazineQuantityLbl);
 	  
-	  JLabel checkoutMezzPriceLbl = new JLabel("$"+mezzazineCount*125);
+	  checkoutMezzPriceLbl = new JLabel("$"+mezzazineCount*125);
 	  GridBagConstraints gbc_checkoutMezzPriceLbl = new GridBagConstraints();
 	  gbc_checkoutMezzPriceLbl.insets = new Insets(0, 0, 5, 5);
 	  gbc_checkoutMezzPriceLbl.gridx = 3;
@@ -298,7 +301,7 @@ class Main {
 	  gbc_balconyQuantityLbl.gridy = 3;
 	  center.add(balconyQuantityLbl, gbc_balconyQuantityLbl);
 	  
-	  JLabel checkoutBalcPriceLbl = new JLabel("$"+balconyCount*75);
+	  checkoutBalcPriceLbl = new JLabel("$"+balconyCount*75);
 	  GridBagConstraints gbc_checkoutBalcPriceLbl = new GridBagConstraints();
 	  gbc_checkoutBalcPriceLbl.insets = new Insets(0, 0, 5, 5);
 	  gbc_checkoutBalcPriceLbl.gridx = 3;
@@ -654,7 +657,9 @@ class Main {
 	  orchestraQuantityLbl.setText("0");
 	  mezzazineQuantityLbl.setText("0");
 	  balconyQuantityLbl.setText("0");
-	  
+	  checkoutOrchPriceLbl.setText("$0");
+	  checkoutMezzPriceLbl.setText("$0");
+	  checkoutBalcPriceLbl.setText("$0");
   }
  
   // input validation using Scanner
