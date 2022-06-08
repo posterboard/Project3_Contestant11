@@ -49,11 +49,11 @@ class Main {
   public static void mainMenuF() {
 	  JFrame mainMenu = new JFrame();
 	
-		mainMenu.setSize(500,500);
+	  mainMenu.setSize(500,500);
 
 
-		mainMenu.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		mainMenu.getContentPane().setLayout(new BorderLayout(0, 0));
+	  mainMenu.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+	  mainMenu.getContentPane().setLayout(new BorderLayout(0, 0));
 	  mainMenu.getContentPane().setLayout(new BorderLayout(0, 0));
 	  
 	  JPanel north = new JPanel();
